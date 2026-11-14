@@ -1,0 +1,9 @@
+"""PDF abstraction; page indexes are zero-based internally."""
+from typing import Protocol
+from app.services.pdf.models import PDFMetadata, RenderedPage
+from app.services.models import NormalizedRegion
+
+class PDFService(Protocol):
+    def inspect(self, path: str) -> PDFMetadata: ...
+    def render_page(self, path: str, page_index: int, dpi: int, region: NormalizedRegion | None = None) -> RenderedPage: ...
+    def extract_embedded_text(self, path: str, page_index: int) -> str: ...

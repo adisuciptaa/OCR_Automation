@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local runtime data and sensitive files
+runtime/input/*
+runtime/output/*
+runtime/temporary/*
+runtime/quarantine/*
+runtime/logs/*
+runtime/reports/*
+runtime/backups/*
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+*.log
+.env
+.env.*
+!.env.example
+
+# OCR model binaries and caches (manage separately)
+models/**/*.onnx
+models/**/*.pt
+models/**/*.pth
+models/**/*.bin
+models/cache/
+
+# Package/build artifacts
+dist/
+build/
+*.spec
+packages/*
+!packages/.gitkeep
+
+# uv / Python project environment
+.venv/
+# uv.lock is intentionally tracked for reproducible dependency resolution.
+
+# Generated test reports
+tests/reports/*.xml
+
+# Local publisher signing material and development packages
+*.pem
+*_public_key.txt
+*_private_key.*
+*.zip

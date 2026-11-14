@@ -1,0 +1,1 @@
+# Purchase Order Reader\n\nPlanned Feature Module. No implementation or manifest is included yet. Create it only after its feature contract, ownership, configuration schema, and tests are defined.\n
