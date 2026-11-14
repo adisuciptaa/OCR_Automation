@@ -12,26 +12,10 @@
   "dependencies": {
     "features": [],
     "services": [
-      {
-        "id": "pdf.render",
-        "version": "1.0.0"
-      },
-      {
-        "id": "ocr.recognize",
-        "version": "1.0.0"
-      },
-      {
-        "id": "image.process",
-        "version": "1.0.0"
-      },
-      {
-        "id": "excel.workbook",
-        "version": "1.0.0"
-      },
-      {
-        "id": "validation.generic",
-        "version": "1.0.0"
-      }
+      {"id": "pdf.render", "version": "1.0.0"},
+      {"id": "ocr.recognize", "version": "1.0.0"},
+      {"id": "image.process", "version": "1.0.0"},
+      {"id": "excel.workbook", "version": "1.0.0"}
     ]
   },
   "permissions": [
